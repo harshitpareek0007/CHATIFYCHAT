@@ -13,6 +13,7 @@ app.use(cors({
     credentials: true,
     origin: process.env.CLIENT_URL
 }));
+app.use(express.static('./public'))
 
 
 const authRouter = require('./routes/auth.route')
