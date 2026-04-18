@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../hooks/useAuth";
 import { toast } from "react-toastify";
 import Loading from "../../shared/components/Loading";
+import image from "../assets/login.png"
 const Login = () => {
   const { loading, handleLogin } = useAuth();
 
@@ -41,6 +42,13 @@ const Login = () => {
 
   return (
     <main>
+    <div className="left">
+              <img
+                src={image}
+                alt="Login"
+                className="form-image"
+              />
+              </div>
       <div className="form-container">
         <h1>Login</h1>
 

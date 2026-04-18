@@ -4,6 +4,7 @@ import { useAuth } from "../hooks/useAuth";
 import { toast } from "react-toastify";
 import Loading from "../../shared/components/Loading";
 import "../style/form.scss"
+import image from "../assets/login.png"
 const Register = () => {
   const { loading, handleRegister } = useAuth();
   const navigate = useNavigate();
@@ -44,6 +45,13 @@ const Register = () => {
 
   return (
     <main>
+    <div className="left">
+              <img
+                src={image}
+                alt="Login"
+                className="form-image"
+              />
+              </div>
       <div className="form-container">
         <h1>Register</h1>
 
